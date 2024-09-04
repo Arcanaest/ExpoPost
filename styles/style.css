@@ -1,0 +1,22 @@
+.accordion-button{
+    background-color: rgb(255, 135, 201);
+}
+
+.accordion-button:not(.collapsed){
+    background-color: rgb(255, 135, 201);
+}
+
+.posts{
+    margin-top: 40px;
+}
+
+.card{
+    width: 100%!important;
+}
+
+.cards-holder{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
