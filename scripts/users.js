@@ -9,7 +9,7 @@ fetch("https://jsonplaceholder.typicode.com/users")
   );
 
 const renderUsers = (users) => {
-  users.forEach(({ id, name, username, email, phone, website }) => {
+  users.forEach(({ id, name, userId, username, email, phone, website }) => {
     const card = document.createElement("div");
     card.classList.add("card", "w-100", "cards");
 
@@ -38,7 +38,7 @@ const renderUsers = (users) => {
 
     const cardBtn = document.createElement("a");
     cardBtn.classList.add("btn", "btn-dark");
-    cardBtn.innerText = "Перейти на страницу пользователя";
+    cardBtn.innerHTML = `<a href="user.html?id=${id}" class="btn btn-dark">Перейти на страницу пользователя</a>`;
 
     cardBody.append(
       cardName,

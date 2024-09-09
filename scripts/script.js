@@ -15,9 +15,7 @@ const renderPosts = (posts) => {
         <p class="card-text">
           ${body.length > 100 ? body.substring(0, 100) + "..." : body}
         </p>
-        <a href="post.html" class="btn btn-primary">
-          Go somewhere
-        </a>
+          <a href="pages/post.html?postId=${id}" class="btn btn-primary">Go somewhere</a>
       </div>
     </div>
   </div>`)
